@@ -61,3 +61,10 @@ function validar_email_senha() {
         return false;
     }
 }
+
+
+const botao_login = document.getElementById("botao_login");
+botao_login.addEventListener("click", validar_email_senha);
+
+const botao_senha = document.getElementById("botao_senha");
+botao_senha.addEventListener("click", mostrar_senha);
